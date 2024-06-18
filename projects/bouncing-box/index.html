@@ -103,7 +103,7 @@
     				 // then do X, Y, and Z
 				}
 				if (positionX < 0) {
-					speed = ;
+					speed = speed * -1;
     				 // then do X, Y, and Z
 				}
 
@@ -118,7 +118,13 @@
 				positionX = 0;
 				points = points + 1;
 				changeBoxText(points);
-				speed = speed + 3;
+				speed = speed += 3;
+				if (speed > 0){
+					speed + 3;
+				}
+				else if (speed < 0){
+					speed - 3;
+				}
 				
 
 			};
