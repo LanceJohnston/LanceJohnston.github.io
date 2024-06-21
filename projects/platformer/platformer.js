@@ -60,6 +60,10 @@ $(function () {
     createPlatform(840, 140, 90, 20)
     createPlatform(500, 240, 90, 20)
     createPlatform(670, 340, 90, 20)
+    //Border
+    createPlatform(0, -10, 900000, 20)
+    createPlatform(-30, 0, 40, 30000);
+    createPlatform(1385, 30, 40, 30000000);
     
 
     // TODO 2
