@@ -366,14 +366,14 @@ function deathOfPlayer() {
     canvas.height / 2
   );
   ctx.fillStyle = "black";
-  ctx.font = "575% serif";
+  ctx.font = "760% serif";
   ctx.fillText(
-    "You live no longer",
+    "You have died",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
-  ctx.font = "500% serif";
+  ctx.font = "530% serif";
   ctx.fillText(
     "Hit any key to restart",
     canvas.width / 4,
