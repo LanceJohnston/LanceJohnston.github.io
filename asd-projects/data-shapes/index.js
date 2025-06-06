@@ -46,13 +46,13 @@ dataShapes.push(shape);
     var currentShape = dataShapes[i];
   };
   if (color === "red"){
-    goodBehavior = "bounce"
+    currentShape.goodBehavior = "bounce"
   }
   else if (color === "blue"){
-    goodBehavior = "blink"
+    currentShape.goodBehavior = "blink"
   }
   else{
-    goodBehavior = "spin"
+    currentShape.goodBehavior = "spin"
   }
     
   // TODO 3-a: add a function that handles the static display type
