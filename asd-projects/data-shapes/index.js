@@ -42,7 +42,9 @@ $(document).ready(function () {
   }
 dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
-  for (var currentShape in dataShapes)
+  for (var i = 0; i < dataShapes.length; i++){
+    var currentShape = dataShapes[i];
+  }
 
   // TODO 3-a: add a function that handles the static display type
   
