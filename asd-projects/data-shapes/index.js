@@ -39,13 +39,22 @@ $(document).ready(function () {
     color: "blue",
     shape: "circle",
     repeat: 3,
-  }
+  };
 dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
   for (var i = 0; i < dataShapes.length; i++){
     var currentShape = dataShapes[i];
+  };
+  if (color === "red"){
+    goodBehavior = "bounce"
   }
-
+  else if (color === "blue"){
+    goodBehavior = "blink"
+  }
+  else{
+    goodBehavior = "spin"
+  }
+    
   // TODO 3-a: add a function that handles the static display type
   
 
