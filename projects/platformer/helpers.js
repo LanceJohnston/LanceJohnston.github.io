@@ -373,7 +373,7 @@ function deathOfPlayer() {
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
-  ctx.font = "530% serif";
+  ctx.font = "525% serif";
   ctx.fillText(
     "Hit any key to restart",
     canvas.width / 4,
