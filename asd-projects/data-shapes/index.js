@@ -35,10 +35,14 @@ $(document).ready(function () {
   /////////////////////////////////////////////////
 
   // TODO 1: create a new shape object and add it to the array
-  
-
+  var shape = {
+    color: "blue",
+    shape: "circle",
+    repeat: 3,
+  }
+dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
-  
+  for (var currentShape in dataShapes)
 
   // TODO 3-a: add a function that handles the static display type
   
