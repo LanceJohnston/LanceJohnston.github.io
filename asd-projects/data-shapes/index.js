@@ -53,7 +53,7 @@ dataShapes.push(shape);
   else{
     currentShape.goodBehavior = "spin"
   }
-};
+  };
   // TODO 3-a: add a function that handles the static display type
   
 
