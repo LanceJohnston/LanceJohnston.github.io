@@ -67,7 +67,7 @@ function getId(number){
 }
 
 // this adds a circle into the HTML
-funtion addNewCircleElement(circle, id){
+function addNewCircleElement(circle, id){
 
     // this creates the HTML for a new circle element 
     var $circle = $('<div>').attr('id', id)
@@ -84,7 +84,7 @@ funtion addNewCircleElement(circle, id){
 //////////////////
 
 // this should move all of the circles
-function update){
+function (update){
 
     // loop over the circles array. We use the maxCircles variable instead of circles.length
     // to make seeing issues in the debugger slightly easier (in practice, you should use
