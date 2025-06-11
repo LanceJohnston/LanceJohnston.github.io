@@ -1,13 +1,13 @@
 #board {
   width: 400px;
   margin: auto;
-  border: silver ridge 4px;
+  border: rgb(217, 204, 204) ridge 4px;
 }
 
 #info-bar {
   width: 400px;
   height: 40px;
-  background: lightgray;
+  background: rgb(170, 151, 151);
   font-size: 40px;
   text-align: center;
 }
@@ -16,24 +16,24 @@
   width: 400px;
   height: 400px;
   background: black;
-  border-top: silver ridge 4px;
+  border-top: rgb(187, 169, 169) ridge 4px;
   border-bottom: silver ridge 4px;
 }
 
 #button-box {
   width: 400px;
   height: 40px;
-  background: darkgray;
+  background: rgb(174, 161, 161);
 }
 
 #shape {
-  color: white;
+  color: rgb(255, 255, 255);
   width: 100px;
   height: 100px;
   position: relative;
   top: 150px;
   left: 150px;
-  border: white solid 2px;
+  border: rgb(255, 255, 255) solid 2px;
   display: block;
 }
 
