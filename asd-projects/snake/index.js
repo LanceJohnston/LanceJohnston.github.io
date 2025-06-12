@@ -116,13 +116,13 @@ function moveSnake() {
   snake.head.column = snake.head.column - 1;
   }
   else if (snake.head.direction === "right") {
-  snake.head.column = snake.head.column - 1;
+  snake.head.column = snake.head.column + 1;
   }  
   else if (snake.head.direction === "up") {
   snake.head.row = snake.head.row - 1;
   }  
   else if (snake.head.direction === "down") {
-  snake.head.row = snake.head.row - 1;
+  snake.head.row = snake.head.row + 1;
   }  
   repositionSquare(snake.head);
   
@@ -133,12 +133,11 @@ function moveSnake() {
 }
 
 function hasHitWall() {
-  /* 
-  TODO 8: Should return true if the snake's head has collided with the four walls of the
-  board, false otherwise.
   
-  HINT: What will the row and column of the snake's head be if this were the case?
-  */
+  //TODO 8: Should return true if the snake's head has collided with the four walls of the
+  //board, false otherwise.
+  
+  //HINT: What will the row and column of the snake's head be if this were the case?
 
   return false;
 }
