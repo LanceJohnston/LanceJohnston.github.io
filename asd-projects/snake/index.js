@@ -114,18 +114,14 @@ function moveSnake() {
   //TODO 7: determine the next row and column for the snake's head
   if (snake.head.direction === "left") {
   snake.head.column = snake.head.column - 1;
-  snake.head.row = snake.head.row - 1;
   }
-  if (snake.head.direction === "right") {
+  else if (snake.head.direction === "right") {
   snake.head.column = snake.head.column - 1;
+  }  
+  else if (snake.head.direction === "up") {
   snake.head.row = snake.head.row - 1;
   }  
-  if (snake.head.direction === "up") {
-  snake.head.column = snake.head.column - 1;
-  snake.head.row = snake.head.row - 1;
-  }  
-  if (snake.head.direction === "down") {
-  snake.head.column = snake.head.column - 1;
+  else if (snake.head.direction === "down") {
   snake.head.row = snake.head.row - 1;
   }  
   repositionSquare(snake.head);
