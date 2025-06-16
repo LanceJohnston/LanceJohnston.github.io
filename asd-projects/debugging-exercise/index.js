@@ -84,7 +84,7 @@ function addNewCircleElement(circle, id){
 //////////////////
 
 // this should move all of the circles
-function (update){
+function moveCircle(update){
 
     // loop over the circles array. We use the maxCircles variable instead of circles.length
     // to make seeing issues in the debugger slightly easier (in practice, you should use
