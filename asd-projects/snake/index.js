@@ -174,11 +174,11 @@ function handleAppleCollision() {
   apple.element.remove();
   makeApple();
 
-  /* 
-  TODO 10: determine the location of the next snakeSquare based on the .row,
-  .column and .direction properties of the snake.tail snakeSquare
+   
+  //TODO 10: determine the location of the next snakeSquare based on the .row,
+  //.column and .direction properties of the snake.tail snakeSquare
   
-  HINT: snake.tail.direction will be either "left", "right", "up", or "down".
+  /*HINT: snake.tail.direction will be either "left", "right", "up", or "down".
   If the tail is moving "left", place the next snakeSquare to its right. 
   If the tail is moving "down", place the next snakeSquare above it.
   etc...
