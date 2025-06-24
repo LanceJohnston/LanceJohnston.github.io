@@ -188,16 +188,16 @@ function handleAppleCollision() {
 
   // code to determine the row and column of the snakeSquare to add to the snake
   if (snake.tail.direction === "left"){
-    snake.tail.column = column + 1;
+    column = column + 1;
   }
   if (snake.tail.direction === "right"){
-    snake.tail.column = column + 1;
+    column = column + 1;
   }
  if (snake.tail.direction === "down"){
-   snake.tail.row = row + 1;
+   row = row + 1;
   }
   if (snake.tail.direction === "up"){
-   snake.tail.row = row + 1;
+   row = row + 1;
   }
   makeSnakeSquare(row, column);
 }
