@@ -97,10 +97,22 @@ function checkForNewDirection(event) {
 }
 
 function moveSnake() {
-  /* 
-  TODO 11: Move each part of the snake's body such that it's body follows the head.
-  
-  HINT: To complete this TODO we must figure out the next direction, row, and 
+ 
+ // TODO 11: Move each part of the snake's body such that it's body follows the head.
+//   for () {
+//     var snakeSquare = "???";
+
+//     var nextSnakeSquare = "???";
+//     var nextRow = "???";
+//     var nextColumn = "???";
+//     var nextDirection = "???";
+
+//     snakeSquare.direction = nextDirection;
+//     snakeSquare.row = nextRow;
+//     snakeSquare.column = nextColumn;
+//     repositionSquare(snakeSquare);
+// }
+  /*HINT: To complete this TODO we must figure out the next direction, row, and 
   column for each snakeSquare in the snake's body. The parts of the snake are 
   stored in the Array snake.body and each part knows knows its current 
   column/row properties. 
