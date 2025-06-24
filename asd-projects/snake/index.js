@@ -177,7 +177,18 @@ function handleAppleCollision() {
    
   //TODO 10: determine the location of the next snakeSquare based on the .row,
   //.column and .direction properties of the snake.tail snakeSquare
-  
+//   if (snake.tail.direction === "left"){
+//     snake.tail.column = "right"
+//   }
+//   if (snake.tail.direction === "right"){
+//     snake.tail.column = "left"
+//   }
+//  if (snake.tail.direction === "down"){
+//    snake.tail.row = "up"
+//   }
+//   if (snake.tail.direction === "up"){
+//    snake.tail.row = "down" 
+//   }
   /*HINT: snake.tail.direction will be either "left", "right", "up", or "down".
   If the tail is moving "left", place the next snakeSquare to its right. 
   If the tail is moving "down", place the next snakeSquare above it.
