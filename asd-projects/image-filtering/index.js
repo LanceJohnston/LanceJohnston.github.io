@@ -32,9 +32,8 @@ applyFilter();
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2, 3 & 5: Create the applyFilter function here
-function applyFilter(){
-  for (var i )
-  }
+
+
 // TODO 9 Create the applyFilterNoBackground function
 
 
