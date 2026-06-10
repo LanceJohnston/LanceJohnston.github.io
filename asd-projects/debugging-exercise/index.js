@@ -63,7 +63,7 @@ function decideSpeed(){
 
 // this generates an id for a circle given the circle's number
 function getId(number){
-    return "circle" + number; ()
+    return ("circle" + String(number));
 }
 
 // this adds a circle into the HTML
@@ -91,7 +91,7 @@ function update(){
     // circles.length, but do NOT change it here)
     for (var i = 0; i < maxCircles; i++){
         var circle = circles[j];
-
+debugger;
         // move the circle
         moveCircle(circle);
 
