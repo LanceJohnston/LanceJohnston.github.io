@@ -45,6 +45,8 @@ function init() {
   // TODO 4c-2: initialize the snake
   snake.body = [];
   makeSnakeSquare(10, 10);
+  makeSnakeSquare(9, 10);
+  makeSnakeSquare(8, 10);
   snake.head = snake.body[0];
 
   // TODO 4b-2: initialize the apple
@@ -132,7 +134,18 @@ function hasHitWall() {
    
   /*TODO 8: Should return true if the snake's head has collided with the four walls of the
   board, false otherwise.*/
-
+if (snake.head.row > ROWS){
+  return true;
+}
+if (snake.head.column > COLUMNS){
+  return true;
+}
+if (snake.head.row < 0){
+  return true;
+}
+if (snake.head.column < 0){
+  return true;
+}
   /*HINT: What will the row and column of the snake's head be if this were the case?
   */
 
@@ -142,10 +155,20 @@ function hasHitWall() {
 function hasCollidedWithApple() {
   /* 
   TODO 9: Should return true if the snake's head has collided with the apple, 
-  false otherwise
-  
-  HINT: Both the apple and the snake's head are aware of their own row and column
-  */
+  false otherwise*/
+if (apple.row === snake.head.row - 1){
+  return true;
+}
+if (apple.column === snake.head.column - 1){
+  return true;
+}
+if (snake.head.column === apple.column - 1){
+  return true;
+}
+if (snake.head.row === apple.row - 1){
+  return true;
+}
+  //HINT: Both the apple and the snake's head are aware of their own row and column
 
   return false;
 }
