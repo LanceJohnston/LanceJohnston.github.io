@@ -156,16 +156,16 @@ function hasCollidedWithApple() {
   /* 
   TODO 9: Should return true if the snake's head has collided with the apple, 
   false otherwise*/
-if (apple.row === snake.head.row - 1){
+if (apple.row === snake.head.row){
   return true;
 }
-if (apple.column === snake.head.column - 1){
+if (apple.column === snake.head.column){
   return true;
 }
-if (snake.head.column === apple.column - 1){
+if (snake.head.column === apple.column){
   return true;
 }
-if (snake.head.row === apple.row - 1){
+if (snake.head.row === apple.row){
   return true;
 }
   //HINT: Both the apple and the snake's head are aware of their own row and column
