@@ -98,13 +98,13 @@ function checkForNewDirection(event) {
 
 function moveSnake() {
   //TODO 11: Move each part of the snake's body such that it's body follows the head.
-/*for ( ) {
-    var snakeSquare = "???";
+for (var i = snake.body.length-1; i > 0; i--) {
+    var snakeSquare = snake.body[i];
 
-    var nextSnakeSquare = "???";
-    var nextRow = "???";
-    var nextColumn = "???";
-    var nextDirection = "???";
+    var nextSnakeSquare = snake.body[i - 1];
+    var nextRow = nextSnakeSquare.row;
+    var nextColumn = nextSnakeSquare.column;
+    var nextDirection = nextSnakeSquare.direction;
 
     snakeSquare.direction = nextDirection;
     snakeSquare.row = nextRow;
@@ -215,9 +215,12 @@ function handleAppleCollision() {
 function hasCollidedWithSnake() {
   /* 
   TODO 12: Should return true if the snake's head has collided with any part of the
-  snake's body.
-  
-  HINT: Each part of the snake's body is stored in the snake.body Array. The
+  snake's body.*/
+  for (var i = 1; snake.body.length > i; i++)
+  if (snake.head.row === snake.body[i].row && snake.body[i].column === snake.head.column){
+    return true;
+  }
+ /* HINT: Each part of the snake's body is stored in the snake.body Array. The
   head and each part of the snake's body also knows its own row and column.
   
   */
@@ -328,7 +331,11 @@ function getRandomAvailablePosition() {
     randomPosition.column = Math.floor(Math.random() * COLUMNS);
     randomPosition.row = Math.floor(Math.random() * ROWS);
     spaceIsAvailable = true;
-
+for (var i = 0; snake.body.length > i; i++){
+  if (randomPosition.row === snake.body[i].row && snake.body[i].column === randomPosition.column){
+    spaceIsAvailable = false;
+  }
+}
     /*
     TODO 13: After generating the random position determine if that position is
     not occupied by a snakeSquare in the snake's body. If it is then set 
