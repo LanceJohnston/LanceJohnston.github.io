@@ -4,6 +4,7 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
+  applyFilter();
 });
 
 /////////////////////////////////////////////////////////
@@ -32,7 +33,18 @@ function applyAndRender() {
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2, 3 & 5: Create the applyFilter function here
-
+function applyFilter(){
+  for(var row = 0; row < image.length; row++){
+  for(var col = 0; col < image[row].length; col++){
+  //console.log(image[row][col]);
+  var pixel = image[row][col];
+  var pixelArray = rgbStringToArray(pixel);
+  var udatedPixel = rgbArrayToString(pixelArray);
+  
+  // This is where I’ll modify the color values later
+}
+}
+}
 
 // TODO 9 Create the applyFilterNoBackground function
 
