@@ -4,7 +4,7 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
-  applyFilter(reddify);
+  applyFilter(decreaseBlue);
 });
 
 /////////////////////////////////////////////////////////
@@ -65,6 +65,7 @@ function reddify(pixelArray){
 }
 // TODO 7 & 8: Create more filter functions
 function decreaseBlue(pixelArray){
-
+pixelArray[BLUE] = BLUE - 50;
+pixelArray[BLUE] = keepInBounds(pixelArray[BLUE]);
 }
 // CHALLENGE code goes below here
