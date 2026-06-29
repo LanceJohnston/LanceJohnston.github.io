@@ -4,7 +4,6 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
-  applyFilter(decreaseBlue);
 });
 
 /////////////////////////////////////////////////////////
@@ -22,7 +21,7 @@ function resetAndRender() {
 function applyAndRender() {
   // Multiple TODOs: Call your apply function(s) here
 
-  // do not change the below line of code
+  applyFilter(increaseGreenByBlue);// do not change the below line of code
   render($("#display"), image);
 }
 
@@ -46,7 +45,20 @@ function applyFilter(filterFunction) {
 }
 
 // TODO 9 Create the applyFilterNoBackground function
-
+function applyFilterNoBackground(filterFunction){
+var backgroundColor = image[0][0];
+for (var row = 0; row < image.length; row++) {
+  for (var col = 0; col < image[row].length; col++) {
+if (image[row][col] !== backgroundColor){
+  var pixel = image[row][col];
+  var pixelArray = rgbStringToArray(pixel);
+  filterFunction(pixelArray) = pixelArray;
+  var updatedPixel = rgbArrayToString(pixelArray);
+  image[row][col] = updatedPixel;
+}
+}
+}
+}
 // TODO 6: Create the keepInBounds function
 function keepInBounds(theNumber){
   if(theNumber < 0){
@@ -67,5 +79,9 @@ function reddify(pixelArray){
 function decreaseBlue(pixelArray){
 pixelArray[BLUE] = BLUE - 50;
 pixelArray[BLUE] = keepInBounds(pixelArray[BLUE]);
+}
+function increaseGreenByBlue(pixelArray){
+  pixelArray[GREEN] = pixelArray[BLUE];
+  pixelArray[GREEN] = keepInBounds(pixelArray[GREEN]);
 }
 // CHALLENGE code goes below here
